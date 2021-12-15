@@ -45,8 +45,8 @@ public class PersonController {
 		maps.put("time", new JobParameter(System.currentTimeMillis()));
 		JobParameters parameters = new JobParameters(maps);
 		JobExecution jobExecution = jobLauncher.run(job, parameters);
-		LOGGER.info("Job status::::::From Subash Test:::"+ jobExecution.getStatus());
-		LOGGER.info("Job is Running::::::From Subash Test:::::");
+		LOGGER.info("Job status::::::From Subash Test::::::One::"+ jobExecution.getStatus());
+		LOGGER.info("Job is Running::::::From Subash Test:::Two::");
 		while(jobExecution.isRunning()) {
 			LOGGER.info("..........................");
 		}
@@ -58,12 +58,12 @@ public class PersonController {
 	@PostMapping("/load")
     public BatchStatus Load(@RequestParam("filePath") String filePath) throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
         System.out.println("file path::::::::::::::::"+ filePath);
-        LOGGER.info("Dynamic File Upload:::::::::::From Subash Test:::::::::;");
+        LOGGER.info("Dynamic File Upload:::::::::::From Subash Test:::Three::::::;");
         JobExecution jobExecution = jobLauncher.run(job, new JobParametersBuilder()
                 .addString("fileUploadName", filePath)
                 .addLong("time", System.currentTimeMillis())
                 .toJobParameters());
-        LOGGER.info("Dynamic File Upload::::::::::From Subash Test::::::::::;");
+        LOGGER.info("Dynamic File Upload::::::::::From Subash Test:::Four:::::::;");
         return jobExecution.getStatus();
 
     }
