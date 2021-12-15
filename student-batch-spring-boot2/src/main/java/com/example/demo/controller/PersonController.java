@@ -58,7 +58,7 @@ public class PersonController {
 	@PostMapping("/load")
     public BatchStatus Load(@RequestParam("filePath") String filePath) throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
         System.out.println("file path::::::::::::::::"+ filePath);
-        LOGGER.info("Dynamic File Upload:::::::::::From Subash Test:::Three::::::;");
+        LOGGER.info("Dynamic File Upload:::::::::::From Subash Test:::Three::::Subash::;");
         JobExecution jobExecution = jobLauncher.run(job, new JobParametersBuilder()
                 .addString("fileUploadName", filePath)
                 .addLong("time", System.currentTimeMillis())

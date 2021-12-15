@@ -60,11 +60,11 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-spring-webmvc-5.3.13.jar/meta-inf/spring-form.tld" project="student-batch-spring-boot"/>
+      path="FileSystems/lib-spring-webmvc-5.3.13.jar/meta-inf/spring-form.tld" project="student-batch-spring-boot2"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-spring-webmvc-5.3.13.jar/meta-inf/spring.tld" project="student-batch-spring-boot"/>
+      path="FileSystems/lib-spring-webmvc-5.3.13.jar/meta-inf/spring.tld" project="student-batch-spring-boot2"/>
     </library>
    </libraries>
   </path>
@@ -114,6 +114,8 @@
   <path value="C:/Users/subhashb/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar"/>
  </paths>
  <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="batch-verification"/>
   <el>
    <linked-el length="10" name="%0" offset="1763" path="%1"/>
   </el>
