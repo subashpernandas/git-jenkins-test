@@ -42,10 +42,11 @@ public class Person {
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date dateOfEntry;
 	
-	public Person(String firstName, String lastName, String email, Integer age) {
+	public Person(String firstName, String lastName, String email, Integer age, String familyName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.age =age;
+		this.familyName = familyName;
 	}
 }
