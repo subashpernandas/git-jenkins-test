@@ -37,6 +37,8 @@ public class Person {
 	
 	private Integer age;
 	
+	private String familyName;
+	
 	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date dateOfEntry;
 	
