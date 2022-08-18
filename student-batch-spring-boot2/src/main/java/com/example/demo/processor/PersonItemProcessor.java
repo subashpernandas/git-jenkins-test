@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import com.example.demo.model.Person;
 
 @Component
+//Author Subash Pernandas Savari
 public class PersonItemProcessor implements ItemProcessor<Person, Person>{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PersonItemProcessor.class);
