@@ -6,6 +6,7 @@ import com.example.demo.model.Person;
 import org.springframework.stereotype.Repository;
 
 @Repository
+//Author Subash Pernandas Savari
 public interface PersonRepo extends JpaRepository<Person, Integer>{
 
 }
